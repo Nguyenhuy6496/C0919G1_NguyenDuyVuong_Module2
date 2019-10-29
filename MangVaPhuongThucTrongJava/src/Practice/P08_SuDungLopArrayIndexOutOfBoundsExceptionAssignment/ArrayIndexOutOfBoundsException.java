@@ -1,0 +1,4 @@
+package Practice.P08_SuDungLopArrayIndexOutOfBoundsExceptionAssignment;
+
+public class ArrayIndexOutOfBoundsException {
+}
