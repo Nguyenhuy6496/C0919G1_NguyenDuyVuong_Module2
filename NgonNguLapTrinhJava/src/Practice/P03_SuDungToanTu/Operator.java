@@ -1,4 +1,4 @@
-package P03_SuDungToanTu;
+package Practice.P03_SuDungToanTu;
 
 import java.util.Scanner;
 

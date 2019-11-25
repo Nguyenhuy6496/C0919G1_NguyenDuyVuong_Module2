@@ -1,4 +1,4 @@
-package P02_KhaiBaoVaSuDungBien;
+package Practice.P02_KhaiBaoVaSuDungBien;
 
 public class Variables {
     public static void main(String[] args) {

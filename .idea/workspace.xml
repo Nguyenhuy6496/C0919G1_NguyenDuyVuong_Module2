@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d53108bb-557a-4d1f-a743-5266d3555f86" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/E1_HienThiLoiChao/Greeting.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Exercise/E1_HienThiLoiChao/Greeting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/E2_UngDungDocSoThanhChu/ReadNumbersIntoWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Exercise/E2_UngDungDocSoThanhChu/ReadNumbersIntoWords.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/E6_UngDungChuyenDoiTienTe/CurrencyConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Exercise/E6_UngDungChuyenDoiTienTe/CurrencyConversion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/P01_HienThiThoiGianCuaHeThong/SystemTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Practice/P01_HienThiThoiGianCuaHeThong/SystemTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/P02_KhaiBaoVaSuDungBien/Variables.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Practice/P02_KhaiBaoVaSuDungBien/Variables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/P03_SuDungToanTu/Operator.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Practice/P03_SuDungToanTu/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/P04_GiaiPhuongTrinhBacNhat/Equation1.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Practice/P04_GiaiPhuongTrinhBacNhat/Equation1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/P05_KiemTraNamNhuan/CheckLeapYear.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Practice/P05_KiemTraNamNhuan/CheckLeapYear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/P06_TinhSoNgayTrongThang/DaysInMonth.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Practice/P06_TinhSoNgayTrongThang/DaysInMonth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/P07_KiemTraSoNguyenTo/CheckPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Practice/P07_KiemTraSoNguyenTo/CheckPrime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/P09_ThietKeMenuChoUngDung/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Practice/P09_ThietKeMenuChoUngDung/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/P10_TimUocSoChungLonNhat/GreatestCommonDivisor.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Practice/P10_TimUocSoChungLonNhat/GreatestCommonDivisor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/P11_UngDungTinhTienLaiChoVay/CalculateInterest.java" beforeDir="false" afterPath="$PROJECT_DIR$/NgonNguLapTrinhJava/src/Practice/P11_UngDungTinhTienLaiChoVay/CalculateInterest.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1SJJXxPsbghjtMnnS6NPEsiQr9u" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/NgonNguLapTrinhJava" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d53108bb-557a-4d1f-a743-5266d3555f86" name="Default Changelist" comment="" />
+      <created>1571275808733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571275808733</updated>
+      <workItem from="1571275810364" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

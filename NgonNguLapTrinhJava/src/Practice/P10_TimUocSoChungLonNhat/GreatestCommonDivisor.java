@@ -1,4 +1,4 @@
-package P10_TimUocSoChungLonNhat;
+package Practice.P10_TimUocSoChungLonNhat;
 
 import java.util.Scanner;
 

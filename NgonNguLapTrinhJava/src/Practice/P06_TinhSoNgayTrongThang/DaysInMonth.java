@@ -1,4 +1,4 @@
-package P06_TinhSoNgayTrongThang;
+package Practice.P06_TinhSoNgayTrongThang;
 
 import java.util.Scanner;
 public class DaysInMonth {

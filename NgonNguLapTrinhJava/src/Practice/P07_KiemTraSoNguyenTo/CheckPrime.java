@@ -1,4 +1,4 @@
-package P07_KiemTraSoNguyenTo;
+package Practice.P07_KiemTraSoNguyenTo;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package E1_HienThiLoiChao;
+package Exercise.E1_HienThiLoiChao;
 
 import java.util.Scanner;
 public class Greeting {

@@ -1,4 +1,4 @@
-package E2_UngDungDocSoThanhChu;
+package Exercise.E2_UngDungDocSoThanhChu;
 
 import java.util.Scanner;
 public class ReadNumbersIntoWords {

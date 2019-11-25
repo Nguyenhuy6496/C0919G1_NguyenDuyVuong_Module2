@@ -1,4 +1,4 @@
-package P09_ThietKeMenuChoUngDung;
+package Practice.P09_ThietKeMenuChoUngDung;
 
 import java.util.Scanner;
 

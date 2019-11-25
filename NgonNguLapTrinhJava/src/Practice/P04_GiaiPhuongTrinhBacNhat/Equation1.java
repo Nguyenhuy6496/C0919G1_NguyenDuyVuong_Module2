@@ -1,4 +1,4 @@
-package P04_GiaiPhuongTrinhBacNhat;
+package Practice.P04_GiaiPhuongTrinhBacNhat;
 
 import java.util.Scanner;
 

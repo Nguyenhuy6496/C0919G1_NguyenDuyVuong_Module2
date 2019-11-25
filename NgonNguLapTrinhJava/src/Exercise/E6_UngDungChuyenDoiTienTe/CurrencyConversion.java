@@ -1,4 +1,4 @@
-package E6_UngDungChuyenDoiTienTe;
+package Exercise.E6_UngDungChuyenDoiTienTe;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package Practice.P05_KiemTraNamNhuan;
+package Practice.P08_KiemTraNamNhuan;
 
 import java.util.Scanner;
 
