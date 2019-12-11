@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <div>
+        <a th:href="@{/}">Back to homepage</a>
+    </div>
+
+    <div>
+        <form method="post" th:action="@{/product/delete}" th:object="${details}">
+            <input type="hidden" th:field="*{id}"/>
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" th:field="*{name}"/>
+            </div>
+            <div>
+                <label for="price">Price</label>
+                <input id="price" type="text" th:field="*{price}"/>
+            </div>
+            <div>
+                <label for="description">Description</label>
+                <input id="description" type="text" th:field="*{description}"/>
+            </div>
+            <div>
+                <label for="producer">Producer</label>
+                <input id="producer" type="text" th:field="*{producer}"/>
+            </div>
+            <div>
+                <input type="submit" value="Delete"/>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

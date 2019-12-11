@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Product details</title>
+</head>
+<body>
+<div>
+    <div>
+        <h1>Product details</h1>
+    </div>
+    <div>
+        <a th:href="@{/}">Back to homepage</a>
+    </div>
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Description</th>
+                <th>Producer</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td th:text="${details.getId()}"></td>
+                <td th:text="${details.getName()}"></td>
+                <td th:text="${details.getPrice()}"></td>
+                <td th:text="${details.getDescription()}"></td>
+                <td th:text="${details.getProducer()}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
