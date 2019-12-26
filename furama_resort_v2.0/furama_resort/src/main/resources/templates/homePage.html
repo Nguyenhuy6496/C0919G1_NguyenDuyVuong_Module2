@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Furama Resort</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#"><img th:src="@{/image/intro-home-page.jpg}" style="height: 50px"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dịch vụ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Review</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Đăng nhập</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Đăng ký</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="text-center">
+    <img th:src="@{/image/intro-home-page.jpg}"  style="width: 100%"/>
+</div>
+
+<div class="container text-center" style="height: 500px">
+    nội dung ở đây
+</div>
+<div class="jumbotron text-center">
+    Footer
+</div>
+</body>
+</html>
