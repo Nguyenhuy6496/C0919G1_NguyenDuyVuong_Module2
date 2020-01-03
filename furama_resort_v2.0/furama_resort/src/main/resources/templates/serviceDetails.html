@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Furama Resort</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--Main content-->
+<div>
+    <h2>Service Details</h2>
+    <table>
+        <tr>
+            <th>Service Name</th>
+            <td th:text="${details.get().getServiceName()}"></td>
+        </tr>
+        <tr>
+            <th>Area</th>
+            <td th:text="${details.get().getArea()}"></td>
+        </tr>
+        <tr>
+            <th>Number of floor</th>
+            <td th:text="${details.get().getNumberOfFloor()}"></td>
+        </tr>
+        <tr>
+            <th>Max number of people</th>
+            <td th:text="${details.get().getMaxNumberOfPeople()}"></td>
+        </tr>
+        <tr>
+            <th>Rental Cost</th>
+            <td th:text="${details.get().getRentalCost()}"></td>
+        </tr>
+        <tr>
+            <th>Availability</th>
+            <td th:text="${details.get().getAvailability()}"></td>
+        </tr>
+    </table>
+</div>
+<div>
+    <a th:href="@{#}">Booking</a>
+    <a th:href="@{/}">Cancel</a>
+</div>
+</body>
+</html>--------------

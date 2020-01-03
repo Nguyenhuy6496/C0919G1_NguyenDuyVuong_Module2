@@ -11,7 +11,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-    <a class="navbar-brand" href="#"><img th:src="@{/image/intro-home-page.jpg}" style="height: 50px"></a>
+    <a class="navbar-brand" href="#">Trang chủ</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,13 +35,55 @@
         </ul>
     </div>
 </nav>
+
+<!--Intro-->
 <div class="text-center">
-    <img th:src="@{/image/intro-home-page.jpg}"  style="width: 100%"/>
+    <img th:src="@{/image/intro-home-page.jpg}" style="width: 100%"/>
 </div>
 
-<div class="container text-center" style="height: 500px">
-    nội dung ở đây
+<!--Main content-->
+<div class="container">
+    <form action="/" class="d-flex">
+        <label>
+            <select name="fromPrice" class="form-control">
+                <option value=" ">Chọn giá tối thiểu</option>
+                <option value="100000">100.000</option>
+                <option value="200000">200.000</option>
+                <option value="300000">300.000</option>
+                <option value="500000">500.000</option>
+                <option value="700000">700.000</option>
+                <option value="1000000">1.000.000</option>
+            </select>
+        </label>
+        <label>
+            <select name="toPrice" class="form-control">
+                <option value=" ">Chọn giá tối đa</option>
+                <option value="200000">200.000</option>
+                <option value="300000">300.000</option>
+                <option value="500000">500.000</option>
+                <option value="700000">700.000</option>
+                <option value="1000000">1.000.000</option>
+                <option value="1500000">1.500.000</option>
+            </select>
+        </label>
+        <input type="submit" class="btn btn-primary" value="Search"/>
+    </form>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-dark text-white" th:each="services : ${listServices}">
+            <h2 th:text="${services.getServiceName()}"></h2>
+            <p th:text="${services.getRentalCost()}"></p>
+            <p th:text="${services.getAvailability()}"></p>
+            <div>
+                <a th:href="@{/services/details/__${services.idService}__}">Details</a>
+                <a th:href="@{#}">Booking</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--FOOTER-->
 <div class="jumbotron text-center">
     Footer
 </div>
