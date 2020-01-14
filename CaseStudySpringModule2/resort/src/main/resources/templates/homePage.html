@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Furama Resort</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#">Trang chủ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Dịch vụ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Review</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login">Đăng nhập</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="register/customers">Đăng ký</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--Intro-->
+<div class="text-center">
+    <img th:src="@{/image/intro-home-page.jpg}" style="width: 100%"/>
+</div>
+
+<!--Main content-->
+<div class="container">
+    <form action="/" class="d-flex">
+        <label>
+            <select name="fromPrice" class="form-control">
+                <option value=" ">Chọn giá tối thiểu</option>
+                <option value="100000">100.000</option>
+                <option value="200000">200.000</option>
+                <option value="300000">300.000</option>
+                <option value="500000">500.000</option>
+                <option value="700000">700.000</option>
+                <option value="1000000">1.000.000</option>
+            </select>
+        </label>
+        <label>
+            <select name="toPrice" class="form-control">
+                <option value=" ">Chọn giá tối đa</option>
+                <option value="200000">200.000</option>
+                <option value="300000">300.000</option>
+                <option value="500000">500.000</option>
+                <option value="700000">700.000</option>
+                <option value="1000000">1.000.000</option>
+                <option value="1500000">1.500.000</option>
+            </select>
+        </label>
+        <input type="submit" class="btn btn-primary" value="Search" style="height: 38px"/>
+    </form>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 bg-dark text-white" th:each="services : ${listServices}">
+            <h2 th:text="${services.getServiceName()}"></h2>
+            <p th:text="${services.getRentalCost()}"></p>
+            <p th:text="${services.getAvailability()}"></p>
+            <div>
+                <a th:href="@{/services/details/__${services.idService}__}">Details</a>
+                <a th:href="@{/services/booking/__${services.idService}__}">Booking</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--FOOTER-->
+<div class="jumbotron text-center">
+    Footer
+</div>
+</body>
+</html>

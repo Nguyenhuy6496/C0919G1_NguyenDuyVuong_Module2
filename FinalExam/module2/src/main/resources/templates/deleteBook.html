@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/delete-book}" th:object="${booksEntity}" method="post">
+    <input th:type="hidden" name="id" th:field="*{idBook}">
+    <table>
+        <tr>
+            <td>Title:</td>
+            <td><input type="text" th:field="*{title}" disabled/></td>
+        </tr>
+        <tr>
+            <td>Author</td>
+            <td><input type="text" th:field="*{author}" disabled/></td>
+        </tr>
+        <tr>
+            <td>Price</td>
+            <td><input type="text" th:field="*{price}" disabled/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Delete book"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

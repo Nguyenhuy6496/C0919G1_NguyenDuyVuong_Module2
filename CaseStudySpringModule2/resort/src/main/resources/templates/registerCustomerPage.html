@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h2>Register form</h2>
+    <form action="/register/customers" method="post" th:object="${customer}">
+        <div class="form-group">
+            <label for="customerName">Full name:</label>
+            <p th:if="${#fields.hasErrors('customerName')}" th:errors="*{customerName}" class="text-danger"></p>
+            <input type="text" class="form-control" id="customerName" name="customerName" th:field="*{customerName}">
+        </div>
+        <div class="form-group">
+            <label for="birthday">Birthday:</label>
+            <p th:if="${#fields.hasErrors('birthday')}" th:errors="*{birthday}" class="text-danger"></p>
+            <input type="date" class="form-control" id="birthday" name="birthday" th:field="*{birthday}">
+        </div>
+        <div class="form-group">
+            <label for="identityCardNumber">Identity card number:</label>
+            <p th:if="${#fields.hasErrors('identityCardNumber')}" th:errors="*{identityCardNumber}" class="text-danger"></p>
+            <input type="text" class="form-control" id="identityCardNumber" name="identityCardNumber" th:field="*{identityCardNumber}">
+        </div>
+        <div class="form-group">
+            <label for="phoneNumber">Phone number:</label>
+            <p th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}" class="text-danger"></p>
+            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" th:field="*{phoneNumber}">
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <p th:if="${#fields.hasErrors('email')}" th:errors="*{email}" class="text-danger"></p>
+            <input type="text" class="form-control" id="email" name="email" th:field="*{email}">
+        </div>
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <p th:if="${#fields.hasErrors('address')}" th:errors="*{address}" class="text-danger"></p>
+            <input type="text" class="form-control" id="address" name="address" th:field="*{address}">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <a th:href="@{/}" class="btn btn-primary">Cancel</a>
+    </form>
+</div>
+</body>
+</html>

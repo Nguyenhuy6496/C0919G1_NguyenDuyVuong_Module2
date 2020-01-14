@@ -27,11 +27,11 @@ FOREIGN KEY (id_capacity) REFERENCES capacity(id_capacity),
 id_department INT(10),
 FOREIGN KEY (id_department) REFERENCES department(id_department),
 birthday DATE,
-idenity_card_number VARCHAR(12),
+identity_card_number VARCHAR(12),
 salary INT(20),
 phone_number VARCHAR(10),
 email VARCHAR(45),
-adress VARCHAR(45)
+address VARCHAR(45)
 );
 
 CREATE TABLE service_included (
@@ -86,10 +86,10 @@ id_customer_type INT(10),
 FOREIGN KEY (id_customer_type) REFERENCES customer_type(id_customer_type),
 customer_name VARCHAR(45),
 birthday DATE,
-idenity_card_number VARCHAR(12),
+identity_card_number VARCHAR(12),
 phone_number VARCHAR(10),
 email VARCHAR(45),
-adress VARCHAR(45)
+address VARCHAR(45)
 );
 
 CREATE TABLE contracts (
@@ -107,6 +107,23 @@ total_pay INT(15)
 );
 
 ALTER TABLE contract_details ADD FOREIGN KEY (id_contract) REFERENCES contracts(id_contract);
+
+CREATE TABLE user_accounts (
+id_user INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+user_email VARCHAR(250),
+user_password VARCHAR(60)
+);
+
+CREATE TABLE roles (
+id_role INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+role_name VARCHAR(250)
+);
+
+CREATE TABLE user_role (
+role_id INT(11) NOT NULL,
+user_id INT(11) NOT NULL,
+PRIMARY KEY(role_id, user_id)
+);
 
 SELECT * FROM furama_resort.workplace;
 INSERT INTO workplace(id_workplace,workplace) 
@@ -133,7 +150,7 @@ VALUE ('1','Finance department'),
 ('7','Scurity department');
 
 SELECT * FROM furama_resort.employees;
-INSERT INTO employees(id_employee,employee_name,id_workplace,id_capacity,id_department,birthday,idenity_card_number,salary,phone_number,email,adress)
+INSERT INTO employees(id_employee,employee_name,id_workplace,id_capacity,id_department,birthday,identity_card_number,salary,phone_number,email,address)
 VALUE ('1','AN','2','3','6','1998/12/20','123958458125',7000000,'0906125498','nguyenvanan@gmail.com','Danang'),
 	  ('2','KIEN','1','1','3','1989/06/03','986758458125',15000000,'0451254706','trananhkien@gmail.com','Quangnam'),
 	  ('3','LAM','4','4','7','1980/05/16','159753265848',5000000,'0876598745','vuvanlam@gmail.com','Hue'),
@@ -154,7 +171,7 @@ VALUE ('1','Diamond'),
 	  ('5','Member');
 
 SELECT * FROM furama_resort.customers;
-INSERT INTO customers(id_customer,id_customer_type,customer_name,birthday,idenity_card_number,phone_number,email,adress)
+INSERT INTO customers(id_customer,id_customer_type,customer_name,birthday,identity_card_number,phone_number,email,address)
 VAlUE ('1','1','VUONG','1996/04/06','097458123658','0906408308','nguyenduyvuong@gmail.com','Danang'),
 	  ('2','1','LONG','1990/08/18','012354875414','0876512458','phanthanhlong@gmail.com','Hue'),
 	  ('3','4','LONG','1987/07/09','987462531526','0980074511','duongvietlinh@gmail.com','Danang'),
